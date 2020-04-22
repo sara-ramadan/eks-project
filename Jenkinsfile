@@ -3,12 +3,9 @@ pipeline {
     stages {
     
         stage("eks") {
-           steps {
-                 sh 'export KUBECONFIG=$KUBECONFIG:~/.kube/config'
-                 sh 'kubectl config use-context clouddevopscapstoneproject'
-                 sh 'kubectl get nodes'
-               
-            }
+                withKubeConfig([credentialsId: 'eks-jenkins', serverUrl: 'https://C07F577FF2DEF356E469FFA3C9E36DD3.sk1.us-east-1.eks.amazonaws.com']) {
+
+                }
         }
     }
     
