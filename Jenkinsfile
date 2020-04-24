@@ -4,7 +4,7 @@ pipeline {
     
         stage("eks") {
             steps{
-                withKubeConfig([credentialsId: 'jenkins-eks-integration']) {
+                withKubeConfig([credentialsId: 'test-test-test']) {
                     sh 'kubectl get pods'
                
                 }
