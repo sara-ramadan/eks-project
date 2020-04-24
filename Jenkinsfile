@@ -4,6 +4,7 @@ node {
       sh 'kubectl apply -f /home/ubuntu/clouddevops-capstoneprojrct/page1/page1-controller.json'
       sh 'kubectl apply -f /home/ubuntu/clouddevops-capstoneprojrct/page2/page2-controller.json'
       sh 'kubectl apply -f /home/ubuntu/clouddevops-capstoneprojrct/pages-service.json'
+      sh 'kubectl get svc'
     }
   }
 }
