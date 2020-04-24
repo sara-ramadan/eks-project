@@ -13,7 +13,7 @@ pipeline {
                     clusterName: 'cluter2404',
                     namespace: 'default'
                     ]) {
-       sh 'kubectl proxy --address 0.0.0.0 --accept-hosts ".*"'               
+                      
       sh 'kubectl get pods'
     }
                 
