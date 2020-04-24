@@ -5,6 +5,7 @@
       "name":"pageslb",
       "labels":{
          "app":"pageslb"
+         
       }
    },
    "spec":{
